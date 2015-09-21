@@ -1,0 +1,14 @@
+.settings
+.metadata
+.class
+.idea/*
+/tags
+*.swp
+*.swo
+*.swn
+Gemfile.lock
+/target
+/tmp
+/out
+/tmpblog
+/.DS_Store
