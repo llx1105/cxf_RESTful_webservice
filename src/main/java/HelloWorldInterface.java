@@ -16,6 +16,8 @@ public interface HelloWorldInterface {
 
     @POST
     @Path("post")
+    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+    @Produces({ MediaType.APPLICATION_JSON })
     public void setUser(String username);
 
 
