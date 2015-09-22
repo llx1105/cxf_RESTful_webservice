@@ -6,6 +6,7 @@
 *.swp
 *.swo
 *.swn
+*.iml
 Gemfile.lock
 /target
 /tmp
