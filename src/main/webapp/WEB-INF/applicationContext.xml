@@ -10,8 +10,8 @@
             <bean class="org.codehaus.jackson.jaxrs.JacksonJsonProvider" />
         </jaxrs:providers>
         <jaxrs:serviceBeans>
-            <ref bean="HelloWorldImp"/>
+            <ref bean="CustomerImp"/>
         </jaxrs:serviceBeans>
     </jaxrs:server>
-    <bean id="HelloWorldImp" class="HelloWorldImp"/>
+    <bean id="CustomerImp" class="services.CustomerImp"/>
 </beans>
