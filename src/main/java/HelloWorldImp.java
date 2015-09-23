@@ -3,7 +3,7 @@
  */
 public class HelloWorldImp implements HelloWorldInterface {
     public String sayHello(String username) {
-        return "goodbye " + username;
+        return "hello " + username;
     }
 
     public void setUser(String username) {
