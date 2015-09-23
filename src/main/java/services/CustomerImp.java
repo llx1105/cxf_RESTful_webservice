@@ -8,13 +8,6 @@ import models.Customers;
  * Created by lxliang on 9/21/15.
  */
 public class CustomerImp implements CustomerInterface {
-//    public String sayHello(String username) {
-//        return "hello  " + username;
-//    }
-//
-//    public void setUser(String username) {
-//
-//    }
 
     public Customer getCustomer(String id) {
         return CustomerRepository.getInstance().getCustomer(id);

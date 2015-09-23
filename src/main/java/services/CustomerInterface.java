@@ -8,19 +8,8 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 
 @WebService
+@Path("/customer")
 public interface CustomerInterface {
-
-//    @GET
-//    @Path("/customer/{username}")
-//    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
-//    @Produces({MediaType.APPLICATION_JSON})
-//    public String sayHello(@PathParam(value = "username") String username);
-//
-//    @POST
-//    @Path("update")
-//    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
-//    @Produces({MediaType.APPLICATION_JSON})
-//    public void setUser(String username);
 
 
     @GET
@@ -34,7 +23,7 @@ public interface CustomerInterface {
     Customers getCustomers();
 
     @POST
-    @Path("/create")
+    @Consumes("application/json")
     @Produces({"application/json", "application/xml"})
     Customer createCustomer(Customer customer);
 
